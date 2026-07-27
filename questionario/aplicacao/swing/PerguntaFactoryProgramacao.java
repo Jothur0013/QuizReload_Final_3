@@ -13,13 +13,13 @@ public class PerguntaFactoryProgramacao  implements PerguntaFactory {
 
         // Adiciona as perguntas usando a classe Pergunta do seu colega
         perguntas.add(new Pergunta(
-                "O que é o Mito de Sísifo?",
+                "Qual conceito da POO permite que uma classe herde atributos e métodos de outra?",
                 Arrays.asList(
-                        "A) Mito de um homem destinado a carregar uma rocha contra uma montanha pela eternidade",
-                        "B) Mito da Deusa do Amor e da Beleza",
-                        "C) Mito do homem que perdeu sua mulher pelo seu orgulho."
+                        "A)Encapsulamento",
+                        "B)Herança ",
+                        "C) Polimorfismo"
                 ),
-                "A"
+                "B"
         ));
 
         perguntas.add(new Pergunta(

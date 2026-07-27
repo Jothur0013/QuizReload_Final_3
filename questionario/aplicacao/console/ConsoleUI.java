@@ -32,14 +32,7 @@ public class ConsoleUI implements QuizUI{
         if (acertou){System.out.println("BOA RESPOSTA!");}
         else{System.out.println("RESPOSTA HORROROSA!");}
     }
-    @Override
-    public boolean analisePergunta(Pergunta pergunta){
-        if (pergunta.getOpcoes().stream().anyMatch(opcao -> opcao.equalsIgnoreCase(respostaAtual))){
-            return true;
-        }
-        else{
-            System.out.println("RESPOSTA FORA DAS OPCOES, TENTE NOVAMENTE!");
-            return false;}}
+
 
      @Override
     public void exibePontuacaoFinal(int acertos, int erros, int pontFinal){
