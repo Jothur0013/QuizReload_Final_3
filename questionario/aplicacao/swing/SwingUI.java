@@ -43,16 +43,7 @@ public class SwingUI implements QuizUI {
         return this.ultimaResposta;
     }
 
-    @Override
-    public boolean analisePergunta(Pergunta pergunta) {
-        // Aqui você pode validar se o usuário não deixou em branco
-        // ou se digitou algo completamente fora do esperado.
-        if (ultimaResposta.trim().isEmpty()) {
-            JOptionPane.showMessageDialog(null, "A resposta não pode ser vazia!", "Aviso", JOptionPane.WARNING_MESSAGE);
-            return false;
-        }
-        return true;
-    }
+
 
     @Override
     public void feedback(Boolean acertou) {

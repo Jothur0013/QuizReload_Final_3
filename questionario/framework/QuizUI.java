@@ -4,7 +4,6 @@ package quiz.framework;
 public interface QuizUI {
     public void exibePergunta(Pergunta pergunta);
     public String usuarioResposta();
-    public boolean analisePergunta(Pergunta pergunta);
     public void feedback(Boolean acertou);
     public void exibePontuacaoFinal(int acertos, int erros, int pontuacaoFinal);
  }
